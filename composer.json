@@ -1,5 +1,5 @@
 {
-	"name": "juklicek/aprila",
+	"name": "aprila/aprila",
 	"description": "Aprila: useful PHP code for simple administration based on Nette Framework",
 	"keywords": ["admin", "registration", "login", "nette"],
 	"homepage": "https://github.com/Aprila",
@@ -11,14 +11,20 @@
 		}
 	],
 	"require": {
-		"php": ">=5.3.1",
-		"nette/nette": "~2.2"
+		"php": ">=8.2",
+		"nette/application": "3.1.*",
+		"nette/bootstrap": "3.1.*",
+		"nette/caching": "3.1.*",
+		"nette/database": "3.1.*",
+		"nette/forms": "3.1.*",
+		"nette/http": "3.1.*",
+		"nette/security": "3.1.*"
 	},
 	"require-dev": {
 		"nette/tester": "1.2"
 	},
 	"autoload": {
 		"classmap": ["src/"],
-        "files": ["src/shortcuts.php"]
+		"files": ["src/shortcuts.php"]
 	}
 }
