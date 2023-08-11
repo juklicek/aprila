@@ -1,0 +1,24 @@
+{
+	"name": "aprila/aprila",
+	"description": "Aprila: useful PHP code for simple administration based on Nette Framework",
+	"keywords": ["admin", "registration", "login", "nette"],
+	"homepage": "https://github.com/Aprila",
+	"license": ["MIT"],
+	"authors": [
+		{
+			"name": "Honza Cerny",
+			"homepage": "http://honzacerny.com"
+		}
+	],
+	"require": {
+		"php": ">=5.3.1",
+		"nette/nette": "~2.2"
+	},
+	"require-dev": {
+		"nette/tester": "1.2"
+	},
+	"autoload": {
+		"classmap": ["src/"],
+        "files": ["src/shortcuts.php"]
+	}
+}
