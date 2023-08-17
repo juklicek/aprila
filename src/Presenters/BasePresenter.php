@@ -10,6 +10,18 @@ use Nette\Application\UI\Presenter;
 abstract class BasePresenter extends Presenter
 {
 
+    private \Nette\DI\Container $context;
+
+    public function injectContext(\Nette\DI\Container $context)
+    {
+        $this->context = $context;
+    }
+
+    public function getContext(): \Nette\DI\Container
+    {
+        return $this->context;
+    }
+
 	protected function beforeRender()
 	{
 		parent::beforeRender();

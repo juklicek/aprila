@@ -18,7 +18,7 @@ use Nette,
  *
  * @author Honza Cerny
  */
-class UserManager extends Nette\Object implements Nette\Security\IAuthenticator
+class UserManager implements Nette\Security\IAuthenticator
 {
 	/**
 	 * @var \Nette\Database\Context
