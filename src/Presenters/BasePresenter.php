@@ -32,7 +32,7 @@ abstract class BasePresenter extends Presenter
 
 		// TODO remove (it's from nette examples)
 		$this->template->viewName = $this->view;
-		$this->template->root = isset($_SERVER['SCRIPT_FILENAME']) ? realpath(dirname(dirname($_SERVER['SCRIPT_FILENAME']))) : NULL;
+		$this->template->root = isset($_SERVER['SCRIPT_FILENAME']) ? @realpath(dirname(dirname($_SERVER['SCRIPT_FILENAME']))) : NULL;
 
 		$a = strrpos($this->name, ':');
 		if ($a === FALSE) {
