@@ -491,7 +491,7 @@ class UserManager implements Nette\Security\IAuthenticator
             ->where('userId', $userId)
             ->fetch();
 
-        $now = new Nette\DateTime();
+        $now = new \DateTime();
         if ($request) {
             $dateDiff = $now->diff($request->created);
 
